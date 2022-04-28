@@ -1,7 +1,7 @@
-local internet_download = {}
+local httpasset = {}
 local net = syn.request or httpget or http_request or requests
 
-function internet_download:DownloadAsset(path, link)
+function httpasset:DownloadAsset(path, link)
     
     writefile(path, net({
 
